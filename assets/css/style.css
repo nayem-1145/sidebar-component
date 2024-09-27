@@ -59,7 +59,7 @@ main {
 }
 @media (max-width: 1599px) {
   .top-nav {
-    height: 102px;
+    height: 98px;
   }
 }
 
@@ -86,7 +86,6 @@ aside.tutor-sidebar {
   background: #FFFFFF;
   box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
   z-index: 1212;
-  background: url(../images/shapes/sidebar-shape-btm-bg.png) no-repeat bottom -22% right 30%/100%;
   border-radius: 20px;
   -moz-transition: width 0.5s ease-out;
   -o-transition: width 0.5s ease-out;
@@ -96,22 +95,25 @@ aside.tutor-sidebar {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar {
-    width: 300px;
-    background-position: bottom -18% right 116%;
-    background-size: 98%;
-    top: 110px;
-    height: calc(100vh - 133px);
+    width: 282px;
+    top: 104px;
+    left: 10px;
+    height: calc(100vh - 114px);
+    border-radius: 16px;
   }
 }
-@media (min-width: 2100px) {
+@media (max-height: 930px) {
   aside.tutor-sidebar {
-    background: url(../images/shapes/sidebar-shape-btm-bg.png) no-repeat bottom -15px right 0%/100%;
+    width: 282px;
+    top: 104px;
+    left: 10px;
+    height: calc(100vh - 114px);
+    border-radius: 16px;
   }
 }
 @media (max-width: 1199px) {
   aside.tutor-sidebar {
-    background-position: bottom -20% right 100%;
-    background-size: 90%;
+    width: 264px;
   }
 }
 aside.tutor-sidebar .sidebar-toggle {
@@ -136,6 +138,59 @@ aside.tutor-sidebar .sidebar-toggle {
 aside.tutor-sidebar .sidebar-toggle.active i::before {
   content: "\e90d";
 }
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-toggle {
+    top: 51px;
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-toggle {
+    top: 51px;
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+aside.tutor-sidebar .bottom_shpae {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+}
+aside.tutor-sidebar .bottom_shpae img {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: -4%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+@media (max-width: 2199px) {
+  aside.tutor-sidebar .bottom_shpae img {
+    margin-bottom: -42%;
+  }
+}
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .bottom_shpae img {
+    margin-bottom: -25%;
+    left: -1%;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .bottom_shpae img {
+    margin-bottom: -26%;
+    left: 0%;
+  }
+}
 aside.tutor-sidebar .sidebar-inner {
   position: relative;
 }
@@ -147,6 +202,16 @@ aside.tutor-sidebar .sidebar-inner .sidebar-avatar {
   border-radius: inherit;
   border-radius: 20px 20px 0 0;
 }
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar {
+    padding: 22px 30px 16px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar {
+    padding: 22px 30px 16px;
+  }
+}
 aside.tutor-sidebar .sidebar-inner .sidebar-avatar::before {
   position: absolute;
   content: "";
@@ -157,9 +222,21 @@ aside.tutor-sidebar .sidebar-inner .sidebar-avatar::before {
   top: -390px;
   left: -92px;
   z-index: -1;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar::before {
+    top: -419px;
+    left: -122px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar::before {
+    top: -419px;
+    left: -122px;
+  }
 }
 aside.tutor-sidebar .sidebar-inner .sidebar-avatar img {
   width: 93px;
@@ -170,9 +247,16 @@ aside.tutor-sidebar .sidebar-inner .sidebar-avatar img {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .sidebar-avatar img {
-    width: 85px;
-    height: 85px;
-    margin-bottom: 13px;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
   }
 }
 aside.tutor-sidebar .sidebar-inner .sidebar-avatar h2 {
@@ -188,8 +272,14 @@ aside.tutor-sidebar .sidebar-inner .sidebar-avatar h2 {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .sidebar-avatar h2 {
-    font-size: 19px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar h2 {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 aside.tutor-sidebar .sidebar-inner .sidebar-avatar h2 span {
@@ -205,6 +295,18 @@ aside.tutor-sidebar .sidebar-inner .sidebar-avatar h6 {
   -webkit-transition: 0.6s ease-in-out;
   -moz-transition: 0.6s ease-in-out;
 }
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar h6 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .sidebar-avatar h6 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
 aside.tutor-sidebar .sidebar-inner .navbar-list {
   padding: 0 32px 0 20px;
   max-height: 60vh;
@@ -214,6 +316,13 @@ aside.tutor-sidebar .sidebar-inner .navbar-list {
   margin-bottom: 40px;
 }
 @media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list {
+    padding: 0 20px;
+    max-height: 60vh;
+    height: 55vh;
+  }
+}
+@media (max-height: 930px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list {
     padding: 0 20px;
     max-height: 60vh;
@@ -275,8 +384,21 @@ aside.tutor-sidebar .sidebar-inner .navbar-list li ul.subMenu li a {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list li ul.subMenu li a {
-    min-height: 44px;
     padding: 0 32px;
+    font-size: 12px;
+    min-height: 40px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list li ul.subMenu li a {
+    padding: 0 32px;
+    font-size: 12px;
+    min-height: 40px;
+  }
+}
+@media (max-height: 849px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list li ul.subMenu li a {
+    min-height: 36px;
   }
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list li ul.subMenu li a::after {
@@ -289,9 +411,8 @@ aside.tutor-sidebar .sidebar-inner .navbar-list li ul.subMenu li.dropdown .subMe
   margin-left: 20px;
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list li.dropdown.active > a::after {
-  transform: rotateZ(90deg);
-  top: 31%;
-  right: 4px !important;
+  content: "\e905";
+  transition: opacity 0.3s ease-in;
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list li.dropdown.active > a:hover, aside.tutor-sidebar .sidebar-inner .navbar-list li.dropdown.active > a {
   background: #E5EEFF;
@@ -303,7 +424,7 @@ aside.tutor-sidebar .sidebar-inner .navbar-list li.dropdown.active > a:hover::af
 aside.tutor-sidebar .sidebar-inner .navbar-list a {
   display: block;
   padding: 0 37px 0 84px;
-  border-radius: 32px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -340,7 +461,12 @@ aside.tutor-sidebar .sidebar-inner .navbar-list a::after {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a::after {
-    right: 18px;
+    right: 12px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a::after {
+    right: 12px;
   }
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list a.active::after {
@@ -368,7 +494,16 @@ aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
-    left: 23px;
+    left: 21px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
+    left: 21px;
+    width: 30px;
+    height: 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -378,6 +513,16 @@ aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child i {
   font-size: 26px;
+}
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child i {
+    font-size: 22px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child i {
+    font-size: 22px;
+  }
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list a > span:last-child {
   transition: 0.6s ease-in-out;
@@ -401,39 +546,43 @@ aside.tutor-sidebar .sidebar-inner .navbar-list a span > small {
   white-space: nowrap;
 }
 @media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a span > small {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a span > small {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a {
-    padding: 0 32px 0 70px;
-    font-size: 15px;
-    min-height: 56px;
+    padding: 0 28px 0 66px;
+    font-size: 14px;
+    min-height: 52px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list a {
+    min-height: 52px;
+    font-size: 14px;
+    padding: 0 28px 0 66px;
   }
 }
 @media (max-width: 1199px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a {
     padding: 0 18px 0 50px;
-    min-height: 60px;
+    min-height: 52px;
   }
   aside.tutor-sidebar .sidebar-inner .navbar-list a::after {
     right: 10px;
   }
 }
-@media (max-height: 930px) {
+@media (max-height: 849px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a {
-    min-height: 61px;
-  }
-}
-@media (max-height: 800px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list a {
-    min-height: 56px;
-  }
-}
-@media (max-height: 699px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list a {
-    min-height: 52px;
-  }
-}
-@media (max-height: 660px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list a {
-    min-height: 50px;
+    min-height: 46px;
   }
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list > ul > li a::before {
@@ -462,13 +611,36 @@ aside.tutor-sidebar .sidebar-inner .navbar-list > ul > li a::before {
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
 }
+@media (max-width: 1599px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list > ul > li a::before {
+    left: 100%;
+    bottom: 4px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px 12px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list > ul > li a::before {
+    left: 100%;
+    bottom: 4px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px 12px;
+  }
+}
 aside.tutor-sidebar .sidebar-inner .navbar-list li.question a {
   text-decoration: underline;
   color: var(--primary-color);
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list li.question a {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar .sidebar-inner .navbar-list li.question a {
+    font-size: 14px;
   }
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list li.question a::after {
@@ -480,7 +652,10 @@ aside.tutor-sidebar.active {
   -o-transition: width 0.5s ease-out;
   -webkit-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
-  background: url(../images/shapes/sidebar-shape-btm-bg.png) no-repeat bottom 0% right 68%/130%;
+}
+aside.tutor-sidebar.active .bottom_shpae img {
+  margin-bottom: -2px;
+  max-width: 108%;
 }
 aside.tutor-sidebar.active .sidebar-avatar {
   padding: 34px 19px;
@@ -492,23 +667,17 @@ aside.tutor-sidebar.active .sidebar-avatar::before {
   left: -55px;
   top: -365px;
 }
-aside.tutor-sidebar.active .sidebar-avatar::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 19px;
-  width: 44px;
-  height: 2px;
-  border-radius: 5px;
-  background-color: #F6F6F6;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
+@media (max-width: 1599px) {
+  aside.tutor-sidebar.active .sidebar-avatar::before {
+    left: -74px;
+    top: -386px;
+  }
 }
 aside.tutor-sidebar.active .sidebar-avatar img {
   width: 44px;
   height: 44px;
   margin: 0;
+  display: none;
 }
 aside.tutor-sidebar.active .sidebar-avatar h2, aside.tutor-sidebar.active .sidebar-avatar h6 {
   opacity: 0;
@@ -518,15 +687,42 @@ aside.tutor-sidebar.active .sidebar-avatar h2, aside.tutor-sidebar.active .sideb
   -moz-transition: 0.3s ease-in-out;
   display: none;
 }
+@media (min-width: 1600px) {
+  aside.tutor-sidebar.active .sidebar-avatar {
+    margin-bottom: 110px;
+  }
+}
 @media (max-width: 1599px) {
   aside.tutor-sidebar.active .sidebar-avatar {
-    margin-bottom: 76px;
+    margin-bottom: 79px;
+    padding: 24px 8px 22px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active .sidebar-avatar {
+    margin-bottom: 79px;
+    padding: 24px 8px 22px;
   }
 }
 aside.tutor-sidebar.active .navbar-list {
-  padding: 0px 10px 0 8px;
+  padding: 0px 9px 0 9px;
   margin-top: 45px;
   min-width: 260px;
+}
+@media (min-width: 2100px) {
+  aside.tutor-sidebar.active .navbar-list {
+    padding: 0 8px;
+  }
+}
+@media (max-width: 1599px) {
+  aside.tutor-sidebar.active .navbar-list {
+    padding: 0 10px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active .navbar-list {
+    padding: 0 13px;
+  }
 }
 aside.tutor-sidebar.active .navbar-list li.dropdown {
   position: relative;
@@ -549,6 +745,16 @@ aside.tutor-sidebar.active .navbar-list li.dropdown > ul.subMenu a {
   min-height: 42px;
   border-radius: 12px;
   padding: 0 12px;
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active .navbar-list li.dropdown > ul.subMenu a {
+    min-height: 40px;
+  }
+}
+@media (max-height: 849px) {
+  aside.tutor-sidebar.active .navbar-list li.dropdown > ul.subMenu a {
+    min-height: 36px;
+  }
 }
 aside.tutor-sidebar.active .navbar-list li.dropdown > ul.subMenu li.dropdown > a::after {
   content: "\e90d";
@@ -584,10 +790,28 @@ aside.tutor-sidebar.active .navbar-list li a {
   border-radius: 50%;
   min-height: 65px;
 }
+@media (min-width: 2100px) {
+  aside.tutor-sidebar.active .navbar-list li a {
+    width: 66px;
+    min-height: 67px;
+  }
+}
 @media (max-width: 1599px) {
   aside.tutor-sidebar.active .navbar-list li a {
-    width: 56px;
-    min-height: 56px;
+    width: 52px;
+    min-height: 52px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active .navbar-list li a {
+    width: 52px;
+    min-height: 52px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active .navbar-list li a {
+    width: 46px;
+    min-height: 46px;
   }
 }
 aside.tutor-sidebar.active .navbar-list > ul > li > a:hover::before {
@@ -608,6 +832,22 @@ aside.tutor-sidebar.active .navbar-list > ul > li > a:hover::after {
   height: 26px;
   content: "";
 }
+@media (max-width: 1599px) {
+  aside.tutor-sidebar.active .navbar-list > ul > li > a:hover::after {
+    left: 89%;
+    background-size: 80%;
+    top: 59%;
+    transition: unset !important;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active .navbar-list > ul > li > a:hover::after {
+    left: 89%;
+    background-size: 80%;
+    top: 59%;
+    transition: unset !important;
+  }
+}
 aside.tutor-sidebar.active .navbar-list li a span:nth-child(2) {
   opacity: 0;
   visibility: hidden;
@@ -627,6 +867,16 @@ aside.tutor-sidebar.active .navbar-list li a span:nth-child(1) {
 }
 aside.tutor-sidebar.active .navbar-list li.question a::after {
   display: block !important;
+}
+@media (max-width: 1599px) {
+  aside.tutor-sidebar.active {
+    width: 72px;
+  }
+}
+@media (max-height: 930px) {
+  aside.tutor-sidebar.active {
+    width: 72px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

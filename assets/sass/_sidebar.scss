@@ -8,7 +8,6 @@ aside.tutor-sidebar {
     background: #FFFFFF;
     box-shadow: 18px 4px 35px rgba(0, 0, 0, 0.02);
     z-index: 1212;
-    background: url(../images/shapes/sidebar-shape-btm-bg.png) no-repeat bottom -22% right 30% / 100%;
     border-radius: 20px;
     -moz-transition: width 0.5s ease-out;
     -o-transition: width 0.5s ease-out;
@@ -17,20 +16,23 @@ aside.tutor-sidebar {
     display: inline-block;
 
     @media(max-width: 1599px) {
-        width: 300px;
-        background-position: bottom -18% right 116%;
-        background-size: 98%;
-        top: 110px;
-        height: calc(100vh - 133px);
+        width: 282px;
+        top: 104px;
+        left: 10px;
+        height: calc(100vh - 114px);
+        border-radius: 16px;
     }
 
-    @media(min-width: 2100px) {
-        background: url(../images/shapes/sidebar-shape-btm-bg.png) no-repeat bottom -15px right 0% / 100%;
+    @media(max-height: 930px) {
+        width: 282px;
+        top: 104px;
+        left: 10px;
+        height: calc(100vh - 114px);
+        border-radius: 16px;
     }
 
     @media(max-width: 1199px) {
-        background-position: bottom -20% right 100%;
-        background-size: 90%;
+        width: 264px;
     }
 
     & .sidebar-toggle {
@@ -57,6 +59,56 @@ aside.tutor-sidebar {
                 content: "\e90d";
             }
         }
+
+        @media(max-width: 1599px) {
+            top: 51px;
+            width: 30px;
+            height: 30px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        @media(max-height: 930px) {
+            top: 51px;
+            width: 30px;
+            height: 30px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+
+    // Sidebar Bottom Shape 
+    & .bottom_shpae {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        z-index: -1;
+        overflow: hidden;
+        border-radius: inherit;
+
+        & img {
+            max-width: 100%;
+            position: relative;
+            margin-bottom: -4%;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -webkit-transition: 0.3s;
+
+            @media(max-width: 2199px) {
+                margin-bottom: -42%;
+            }
+
+            @media(max-width: 1599px) {
+                margin-bottom: -25%;
+                left: -1%;
+            }
+            @media(max-height: 930px) {
+                margin-bottom: -26%;
+                left: 0%;
+            }
+        }
     }
 
     & .sidebar-inner {
@@ -70,6 +122,14 @@ aside.tutor-sidebar {
             border-radius: inherit;
             border-radius: 20px 20px 0 0;
 
+            @media(max-width: 1599px) {
+                padding: 22px 30px 16px;
+            }
+
+            @media(max-height: 930px) {
+                padding: 22px 30px 16px;
+            }
+
             &::before {
                 position: absolute;
                 content: "";
@@ -80,9 +140,19 @@ aside.tutor-sidebar {
                 top: -390px;
                 left: -92px;
                 z-index: -1;
-                transition: 0.3s ease-in-out;
-                -webkit-transition: 0.3s ease-in-out;
-                -moz-transition: 0.3s ease-in-out;
+                transition: 0.3s;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+
+                @media(max-width: 1599px) {
+                    top: -419px;
+                    left: -122px;
+                }
+
+                @media(max-height: 930px) {
+                    top: -419px;
+                    left: -122px;
+                }
             }
 
             & img {
@@ -93,9 +163,15 @@ aside.tutor-sidebar {
                 margin-bottom: 16px;
 
                 @media(max-width: 1599px) {
-                    width: 85px;
-                    height: 85px;
-                    margin-bottom: 13px;
+                    width: 75px;
+                    height: 75px;
+                    margin-bottom: 10px;
+                }
+
+                @media(max-height: 930px) {
+                    width: 75px;
+                    height: 75px;
+                    margin-bottom: 10px;
                 }
             }
 
@@ -111,8 +187,13 @@ aside.tutor-sidebar {
                 white-space: nowrap;
 
                 @media(max-width: 1599px) {
-                    font-size: 19px;
-                    line-height: 29px;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                @media(max-height: 930px) {
+                    font-size: 18px;
+                    line-height: 28px;
                 }
 
                 & span {
@@ -129,6 +210,16 @@ aside.tutor-sidebar {
                 transition: 0.6s ease-in-out;
                 -webkit-transition: 0.6s ease-in-out;
                 -moz-transition: 0.6s ease-in-out;
+
+                @media(max-width: 1599px) {
+                    font-size: 13px;
+                    line-height: 19px;
+                }
+
+                @media(max-height: 930px) {
+                    font-size: 13px;
+                    line-height: 19px;
+                }
             }
         }
 
@@ -141,6 +232,12 @@ aside.tutor-sidebar {
             margin-bottom: 40px;
 
             @media(max-width: 1599px) {
+                padding: 0 20px;
+                max-height: calc(100vh - 40vh);
+                height: calc(100vh - 45vh);
+            }
+
+            @media(max-height: 930px) {
                 padding: 0 20px;
                 max-height: calc(100vh - 40vh);
                 height: calc(100vh - 45vh);
@@ -203,8 +300,19 @@ aside.tutor-sidebar {
                             text-decoration: none;
 
                             @media(max-width: 1599px) {
-                                min-height: 44px;
                                 padding: 0 32px;
+                                font-size: 12px;
+                                min-height: 40px;
+                            }
+
+                            @media(max-height: 930px) {
+                                padding: 0 32px;
+                                font-size: 12px;
+                                min-height: 40px;
+                            }
+
+                            @media(max-height: 849px) {
+                                min-height: 36px;
                             }
 
                             &::after {
@@ -218,7 +326,8 @@ aside.tutor-sidebar {
                                     display: block;
                                 }
                             }
-                            & .subMenu{
+
+                            & .subMenu {
                                 margin-left: 20px;
                             }
                         }
@@ -227,9 +336,8 @@ aside.tutor-sidebar {
 
                 &.dropdown.active {
                     &>a::after {
-                        transform: rotateZ(90deg);
-                        top: 31%;
-                        right: 4px !important;
+                        content: "\e905";
+                        transition: opacity 0.3s ease-in;
                     }
 
                     &>a:hover,
@@ -247,7 +355,7 @@ aside.tutor-sidebar {
             & a {
                 display: block;
                 padding: 0 37px 0 84px;
-                border-radius: 32px;
+                border-radius: 12px;
                 cursor: pointer;
                 font-size: 16px;
                 line-height: 24px;
@@ -283,8 +391,13 @@ aside.tutor-sidebar {
                     transition: 0.5s ease-in-out;
                     -webkit-transition: 0.5s ease-in-out;
                     -moz-transition: 0.5s ease-in-out;
-                    @media(max-width: 1599px){
-                        right: 18px;
+
+                    @media(max-width: 1599px) {
+                        right: 12px;
+                    }
+
+                    @media(max-height: 930px) {
+                        right: 12px;
                     }
                 }
 
@@ -313,7 +426,15 @@ aside.tutor-sidebar {
                         transform: translateY(-50%);
 
                         @media(max-width: 1599px) {
-                            left: 23px;
+                            left: 21px;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        @media(max-height: 930px) {
+                            left: 21px;
+                            width: 30px;
+                            height: 30px;
                         }
 
                         @media(max-width: 1199px) {
@@ -322,6 +443,14 @@ aside.tutor-sidebar {
 
                         & i {
                             font-size: 26px;
+
+                            @media(max-width: 1599px) {
+                                font-size: 22px;
+                            }
+
+                            @media(max-height: 930px) {
+                                font-size: 22px;
+                            }
                         }
                     }
 
@@ -348,37 +477,41 @@ aside.tutor-sidebar {
                     top: -8px;
                     color: var(--text-gray);
                     white-space: nowrap;
+
+                    @media(max-width: 1599px) {
+                        font-size: 11px;
+                        line-height: 17px;
+                    }
+
+                    @media(max-height: 930px) {
+                        font-size: 11px;
+                        line-height: 17px;
+                    }
                 }
 
                 @media(max-width: 1599px) {
-                    padding: 0 32px 0 70px;
-                    font-size: 15px;
-                    min-height: 56px;
+                    padding: 0 28px 0 66px;
+                    font-size: 14px;
+                    min-height: 52px;
+                }
+
+                @media(max-height: 930px) {
+                    min-height: 52px;
+                    font-size: 14px;
+                    padding: 0 28px 0 66px;
                 }
 
                 @media(max-width: 1199px) {
                     padding: 0 18px 0 50px;
-                    min-height: 60px;
+                    min-height: 52px;
 
                     &::after {
                         right: 10px;
                     }
                 }
-                
-                @media(max-height: 930px) {
-                    min-height: 61px;
-                }
 
-                @media(max-height: 800px) {
-                    min-height: 56px;
-                }
-
-                @media(max-height: 699px) {
-                    min-height: 52px;
-                }
-
-                @media(max-height: 660px) {
-                    min-height: 50px;
+                @media(max-height: 849px) {
+                    min-height: 46px;
                 }
             }
 
@@ -408,7 +541,24 @@ aside.tutor-sidebar {
                     transition: 0.5s ease-in-out;
                     -webkit-transition: 0.5s ease-in-out;
                     -moz-transition: 0.5s ease-in-out;
+
+                    @media(max-width:1599px) {
+                        left: 100%;
+                        bottom: 4px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        padding: 8px 12px;
+                    }
+
+                    @media(max-height: 930px) {
+                        left: 100%;
+                        bottom: 4px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        padding: 8px 12px;
+                    }
                 }
+
             }
 
             & li.question {
@@ -417,7 +567,11 @@ aside.tutor-sidebar {
                     color: var(--primary-color);
 
                     @media(max-width: 1599px) {
-                        font-size: 15px;
+                        font-size: 14px;
+                    }
+
+                    @media(max-height: 930px) {
+                        font-size: 14px;
                     }
                 }
 
@@ -435,7 +589,13 @@ aside.tutor-sidebar {
         -o-transition: width 0.5s ease-out;
         -webkit-transition: width 0.5s ease-out;
         transition: width 0.5s ease-out;
-        background: url(../images/shapes/sidebar-shape-btm-bg.png) no-repeat bottom 0% right 68%/130%;
+
+        & .bottom_shpae {
+            & img {
+                margin-bottom: -2px;
+                max-width: 108%;
+            }
+        }
 
         & .sidebar-avatar {
             padding: 34px 19px;
@@ -445,27 +605,38 @@ aside.tutor-sidebar {
 
             &::before {
                 left: -55px;
-                top: -365px
+                top: -365px;
+
+                @media(max-width: 1599px) {
+                    left: -74px;
+                    top: -386px;
+                }
             }
 
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -1px;
-                left: 19px;
-                width: 44px;
-                height: 2px;
-                border-radius: 5px;
-                background-color: #F6F6F6;
-                transition: 0.3s ease-in-out;
-                -webkit-transition: 0.3s ease-in-out;
-                -moz-transition: 0.3s ease-in-out;
-            }
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     bottom: -1px;
+            //     left: 19px;
+            //     width: 44px;
+            //     height: 2px;
+            //     border-radius: 5px;
+            //     background-color: #F6F6F6;
+            //     transition: 0.3s ease-in-out;
+            //     -webkit-transition: 0.3s ease-in-out;
+            //     -moz-transition: 0.3s ease-in-out;
+
+            //     @media(max-width:1599px) {
+            //         left: 10px;
+            //         width: calc(100% - 20px);
+            //     }
+            // }
 
             & img {
                 width: 44px;
                 height: 44px;
                 margin: 0;
+                display: none;
             }
 
             & h2,
@@ -478,15 +649,37 @@ aside.tutor-sidebar {
                 display: none;
             }
 
+            @media(min-width: 1600px) {
+                margin-bottom: 110px;
+            }
+
             @media(max-width: 1599px) {
-                margin-bottom: 76px;
+                margin-bottom: 79px;
+                padding: 24px 8px 22px;
+            }
+
+            @media(max-height: 930px) {
+                margin-bottom: 79px;
+                padding: 24px 8px 22px;
             }
         }
 
         & .navbar-list {
-            padding: 0px 10px 0 8px;
+            padding: 0px 9px 0 9px;
             margin-top: 45px;
             min-width: 260px;
+
+            @media(min-width: 2100px) {
+                padding: 0 8px;
+            }
+
+            @media (max-width: 1599px) {
+                padding: 0 10px;
+            }
+
+            @media (max-height: 930px) {
+                padding: 0 13px;
+            }
 
             & li.dropdown {
                 position: relative;
@@ -509,6 +702,14 @@ aside.tutor-sidebar {
                         min-height: 42px;
                         border-radius: 12px;
                         padding: 0 12px;
+
+                        @media(max-height: 930px) {
+                            min-height: 40px;
+                        }
+
+                        @media(max-height: 849px) {
+                            min-height: 36px;
+                        }
                     }
 
 
@@ -566,9 +767,24 @@ aside.tutor-sidebar {
                 border-radius: 50%;
                 min-height: 65px;
 
+                @media(min-width: 2100px) {
+                    width: 66px;
+                    min-height: 67px;
+                }
+
                 @media(max-width: 1599px) {
-                    width: 56px;
-                    min-height: 56px;
+                    width: 52px;
+                    min-height: 52px;
+                }
+
+                @media(max-height: 930px) {
+                    width: 52px;
+                    min-height: 52px;
+                }
+
+                @media(max-height: 930px) {
+                    width: 46px;
+                    min-height: 46px;
                 }
 
             }
@@ -593,6 +809,20 @@ aside.tutor-sidebar {
                     width: 12px;
                     height: 26px;
                     content: "";
+
+                    @media(max-width: 1599px) {
+                        left: 89%;
+                        background-size: 80%;
+                        top: 59%;
+                        transition: unset !important;
+                    }
+
+                    @media(max-height: 930px) {
+                        left: 89%;
+                        background-size: 80%;
+                        top: 59%;
+                        transition: unset !important;
+                    }
                 }
             }
 
@@ -620,6 +850,14 @@ aside.tutor-sidebar {
                     display: block !important;
                 }
             }
+        }
+
+        @media(max-width: 1599px) {
+            width: 72px;
+        }
+
+        @media(max-height: 930px) {
+            width: 72px;
         }
 
     }

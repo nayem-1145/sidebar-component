@@ -229,38 +229,22 @@ aside.tutor-sidebar {
 
         & .navbar-list {
             padding: 0 32px 0 20px;
-            max-height: calc(100vh - 40vh);
-            height: calc(100vh - 40vh);
+            max-height: calc(100vh - 374px);
+            height: calc(100vh - 374px);
             overflow-y: scroll;
             transition: overflow-y 0.3s ease;
             margin-bottom: 40px;
 
             @media(max-width: 1599px) {
-                padding: 0 12px;
-                max-height: calc(100vh - 40vh);
-                height: calc(100vh - 45vh);
+                padding: 0 10px;
+                max-height: calc(100vh - 310px);
+                height: calc(100vh - 310px);
             }
 
             @media(max-height: 930px) {
-                padding: 0 12px;
-                max-height: calc(100vh - 40vh);
-                height: calc(100vh - 45vh);
-            }
-
-            @media(max-height: 899px) {
-                height: calc(100vh - 45vh);
-            }
-
-            @media(max-height: 799px) {
-                height: calc(100vh - 44vh);
-            }
-
-            @media(max-height: 699px) {
-                height: calc(100vh - 47vh);
-            }
-
-            @media(max-height: 660px) {
-                height: calc(100vh - 52vh);
+                padding: 0 10px;
+                max-height: calc(100vh - 310px);
+                height: calc(100vh - 310px);
             }
 
             &::-webkit-scrollbar {
@@ -422,13 +406,13 @@ aside.tutor-sidebar {
                         transform: translateY(-50%);
 
                         @media(max-width: 1599px) {
-                            left: 12px;
+                            left: 11px;
                             width: 30px;
                             height: 30px;
                         }
 
                         @media(max-height: 930px) {
-                            left: 12px;
+                            left: 11px;
                             width: 30px;
                             height: 30px;
                         }
@@ -439,6 +423,7 @@ aside.tutor-sidebar {
 
                         & i {
                             font-size: 26px;
+                            transition: initial;
 
                             @media(max-width: 1599px) {
                                 font-size: 22px;
@@ -631,7 +616,7 @@ aside.tutor-sidebar {
             }
 
             @media(min-width: 1600px) {
-                margin-bottom: 110px;
+                margin-bottom: 98px;
             }
 
             @media(max-width: 1599px) {
@@ -752,7 +737,7 @@ aside.tutor-sidebar {
                 border-radius: 50%;
                 min-height: 65px;
 
-                @media(min-width: 2100px) {
+                @media(min-width: 1600px) {
                     width: 66px;
                     min-height: 67px;
                 }
@@ -830,9 +815,6 @@ aside.tutor-sidebar {
             & li a span:nth-child(1) {
                 left: 50%;
                 transform: translate(-50%, -50%);
-                transition: 0.3s ease-in-out;
-                -webkit-transition: 0.3s ease-in-out;
-                -moz-transition: 0.3s ease-in-out;
             }
 
             & li.question {

@@ -63,9 +63,14 @@
         }
     });
 
-
-
-    // Tooltip: 
+    $(".tutorLSB ul > li > a").each(function() {
+        $(this).on("click", function(e) {
+            if ($(this).parents("li").hasClass("dropdown")) {
+                return;
+            }
+            $(this).parents(".tutorLSB").find("li.dropdown.active > a").not($(this)).trigger("click");
+        });
+    });
 
 
 

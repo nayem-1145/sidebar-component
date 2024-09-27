@@ -312,44 +312,24 @@ aside.tutor-sidebar .sidebar-inner .sidebar-avatar h6 {
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list {
   padding: 0 32px 0 20px;
-  max-height: 60vh;
-  height: 60vh;
+  max-height: calc(100vh - 374px);
+  height: calc(100vh - 374px);
   overflow-y: scroll;
   transition: overflow-y 0.3s ease;
   margin-bottom: 40px;
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list {
-    padding: 0 12px;
-    max-height: 60vh;
-    height: 55vh;
+    padding: 0 10px;
+    max-height: calc(100vh - 310px);
+    height: calc(100vh - 310px);
   }
 }
 @media (max-height: 930px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list {
-    padding: 0 12px;
-    max-height: 60vh;
-    height: 55vh;
-  }
-}
-@media (max-height: 899px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list {
-    height: 55vh;
-  }
-}
-@media (max-height: 799px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list {
-    height: 56vh;
-  }
-}
-@media (max-height: 699px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list {
-    height: 53vh;
-  }
-}
-@media (max-height: 660px) {
-  aside.tutor-sidebar .sidebar-inner .navbar-list {
-    height: 48vh;
+    padding: 0 10px;
+    max-height: calc(100vh - 310px);
+    height: calc(100vh - 310px);
   }
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list::-webkit-scrollbar {
@@ -492,14 +472,14 @@ aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
-    left: 12px;
+    left: 11px;
     width: 30px;
     height: 30px;
   }
 }
 @media (max-height: 930px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
-    left: 12px;
+    left: 11px;
     width: 30px;
     height: 30px;
   }
@@ -511,6 +491,7 @@ aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child {
 }
 aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child i {
   font-size: 26px;
+  transition: initial;
 }
 @media (max-width: 1599px) {
   aside.tutor-sidebar .sidebar-inner .navbar-list a > span:first-child i {
@@ -689,7 +670,7 @@ aside.tutor-sidebar.active .sidebar-avatar h2, aside.tutor-sidebar.active .sideb
 }
 @media (min-width: 1600px) {
   aside.tutor-sidebar.active .sidebar-avatar {
-    margin-bottom: 110px;
+    margin-bottom: 98px;
   }
 }
 @media (max-width: 1599px) {
@@ -795,7 +776,7 @@ aside.tutor-sidebar.active .navbar-list li a {
   border-radius: 50%;
   min-height: 65px;
 }
-@media (min-width: 2100px) {
+@media (min-width: 1600px) {
   aside.tutor-sidebar.active .navbar-list li a {
     width: 66px;
     min-height: 67px;
@@ -872,9 +853,6 @@ aside.tutor-sidebar.active .navbar-list li a span:nth-child(2) {
 aside.tutor-sidebar.active .navbar-list li a span:nth-child(1) {
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
 }
 aside.tutor-sidebar.active .navbar-list li.question a::after {
   display: block !important;

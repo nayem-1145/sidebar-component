@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+    <title>Tobby Promotional</title>
 
     <!--external stylesheet-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -27,16 +27,20 @@
                 <div class="sidebar-nav">
                     <div class="sidebar-avatar">
                         <img src="assets/images/client-1.webp" alt="user">
-                        <h2>Hello,<span>Donald</span></h2>
+                        <h2>Hello,<span> Donald</span></h2>
                         <h6>Parent</h6>
                     </div>
                     <div class="navbar-list">
                         <ul class="nav d-block" id="myTab" role="tablist">
-                            <li class="nav-item classroom-nav">
+                            <li class="nav-item classroom-nav dropdown">
                                 <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" aria-selected="true" data-title="Luke">
                                     <span><i class="tobby-user"></i></span>
                                     <span> <span>Luke</span><small>Add/Switch child</small></span>
                                 </a>
+                                <ul class="subMenu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Matthew</a></li>
+                                    <li class="nav-item "><a class="nav-link" href="#">Add Child</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" role="tab" aria-controls="overview-tab-pane" aria-selected="false" data-title="Overview">
@@ -44,17 +48,11 @@
                                     <span>Overview</span>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item ">
                                 <a class="nav-link" id="lesson-tab" data-bs-toggle="tab" data-bs-target="#lesson-tab-pane" role="tab" aria-controls="lesson-tab-pane" aria-selected="false" data-title="Learning hub">
                                     <span><i class="tobby-folder-open"></i></span>
                                     <span>Learning hub</span>
                                 </a>
-                                <ul class="subMenu">
-                                    <li class="nav-item"><a class="nav-link" href="#">Earnings</a></li>
-                                    <li class="nav-item "><a class="nav-link" href="#">Refunds</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Declines</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Payouts</a></li>
-                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="inbox-tab" data-bs-toggle="tab" data-bs-target="#inbox-tab-pane" role="tab" aria-controls="inbox-tab-pane" aria-selected="false" data-title="Inbox">

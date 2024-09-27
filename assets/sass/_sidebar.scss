@@ -597,13 +597,6 @@ aside.tutor-sidebar {
         -webkit-transition: width 0.5s ease-out;
         transition: width 0.5s ease-out;
 
-        & .bottom_shpae {
-            & img {
-                margin-bottom: -2px;
-                max-width: 100%;
-            }
-        }
-
         & .sidebar-avatar {
             padding: 34px 19px;
             margin-bottom: 88px;
@@ -619,25 +612,6 @@ aside.tutor-sidebar {
                     top: -386px;
                 }
             }
-
-            // &::after {
-            //     content: "";
-            //     position: absolute;
-            //     bottom: -1px;
-            //     left: 19px;
-            //     width: 44px;
-            //     height: 2px;
-            //     border-radius: 5px;
-            //     background-color: #F6F6F6;
-            //     transition: 0.3s ease-in-out;
-            //     -webkit-transition: 0.3s ease-in-out;
-            //     -moz-transition: 0.3s ease-in-out;
-
-            //     @media(max-width:1599px) {
-            //         left: 10px;
-            //         width: calc(100% - 20px);
-            //     }
-            // }
 
             & img {
                 width: 44px;

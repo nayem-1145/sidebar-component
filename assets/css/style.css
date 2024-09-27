@@ -657,10 +657,6 @@ aside.tutor-sidebar.active {
   -webkit-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
 }
-aside.tutor-sidebar.active .bottom_shpae img {
-  margin-bottom: -2px;
-  max-width: 100%;
-}
 aside.tutor-sidebar.active .sidebar-avatar {
   padding: 34px 19px;
   margin-bottom: 88px;
